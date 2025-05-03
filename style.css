@@ -1,6 +1,16 @@
+body{
+  text-align: center;
+}
 #line {
 width: 80%;
 border: 3px solid black;
 display: inline-block;
 padding: 2%;
+}
+/* #div2{
+  text-align: center;
+} */
+#button1 {
+  width: 180px;
+  
 }
