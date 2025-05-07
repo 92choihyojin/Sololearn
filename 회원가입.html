@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td{
+      border-top: 1px solid rgb(106, 106, 106);
+      margin: 0 20;
+      padding: 15px;
+    }
+    td:first-child{
+      background-color: rgb(207, 207, 207);
+    }
+    fieldset{
+      border: 0px;
+      width: 750px;
+      height: auto;
+      margin: 30px;
+      margin-top: 50px;
+    }
+  </style>
+
+</head>
+<body>
+  <fieldset>
+    <h2 style="text-align: center;">회원가입</h2>
+    <h3>온라인 회원가입 작성</h3>
+  
+        <table>
+        <hr><td colspan="2">고객님의 정보는 개인정보보호정책에 의해 철저하게 보호됩니다.</td></hr>
+          <tr>
+          <td>사용자명ID</td>
+          <td><input type="text" name="name" id="name">
+          <input type="submit" value="ID 중복확인">
+        </tr><br>
+        <tr>
+          <td>비밀번호</td>
+          <td><input type="text" name="pw" id="pw">
+          4~12자리의 영문,숫자,특수문자(!,@,$,%,^,*)만 가능</td>
+        </tr><br>
+        <tr>
+          <td>비밀번호 확인</td>
+          <td><input type="text" name="pwcheck" id="pwcheck"></td>
+        </tr><br>
+        <tr>
+          <td>성명</td>
+          <td><input type="text" name="name" id="name">
+          띄어쓰기 없이 입력,반드시 실명이어야 합니다!</td>
+        </tr><br>
+        <tr>
+          <td>E-mail</td>
+          <td><input type="email" name="E-mail" id="E-mail">
+              <strong>메일 수신여부</strong><br>
+             <strong>할인 이벤트정보</strong> 및 할인쿠폰, 관심분야 등 꼭 필요한 정보를 빠르게 받아보실 수 있습니다. <br>
+              비밀번호 분실시 E-mail로 확인해 드리니, <strong style="color: green;">정확한 E-mail주소를 기입</strong>해주세요
+          </td>
+        </tr>
+        <tr>
+          <td>우편번호</td>
+          <td><input type="adrr" name="adrr" id="adrr">
+          
+          <input type="submit" value="우편번호 검색"> </td>
+        </tr>
+        <tr>
+          <td>주소</td>
+          <td><input type="adrr1" name="adrr1" id="adrr1">
+          </td>
+        </tr>
+      </tr>
+      <tr>
+        <td>휴대폰번호</td>
+        <td><input type="tel" name="tel" id="tel">
+        </td>
+        
+      </tr>
+  </table>
+  <br>
+  <input type="submit" width="50%" value="다 음">
+  </fieldset>
+
+  
+</body>
+</html>
