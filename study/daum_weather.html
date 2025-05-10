@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../weathercss/01header.css">
+  <link rel="stylesheet" href="../weathercss/02newsbreak.css">
+  <link rel="stylesheet" href="../weathercss/03current_weather.css">
+  <link rel="stylesheet" href="../weathercss/04timeweather.css">
+  <link rel="stylesheet" href="../weathercss/05week_forecast.css">
+  <link rel="stylesheet" href="../weathercss/06main_abvert.css">
+  <link rel="stylesheet" href="../weathercss/07living-index.css">
+  <link rel="stylesheet" href="../weathercss/08neighborhood.css">
 
   <style>
     * {
@@ -29,34 +37,6 @@
       background-color: #1C1E21
     }
 
-    header {
-      width: auto;
-      height: 50px;
-      margin: 10px;
-      
-      text-align: left;
-    }
-
-    header div {
-      display: inline-block;
-      color: rgb(96, 96, 96);
-      margin-left: 10px;
-    }
-    
-    .main-header {
-      /*동네날씨 전국 테마 기상특보 영상 MY*/
-      width: auto;
-      height: 50px;
-      margin: 15px;
-      text-align: left;
-      font-weight: 600;
-      font-size: large;
-      padding: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-items: start;
-    }
-
     .weather {
       width: 75%;
       height: auto;
@@ -73,95 +53,6 @@
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: start;
-    }
-
-    .newsbreak {
-      /*특보*/
-      height: 50px;
-      text-align: left;
-      margin: 5px;
-      margin-bottom: 10px;
-      color: white;
-    }
-
-    .newsbreak div {
-      /*특보-2*/
-      width: 50px;
-      height: 30px;
-      font-size: medium;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      color: rgb(249, 129, 37);
-      background-color: rgb(90, 33, 33);
-      border-radius: 30px;
-      display: inline-block;
-      margin: 10px;
-      margin-left: 20px;
-    }
-    .newsbreak p {
-      display: inline-block;
-    }
-
-    .weather1 {
-      /*날씨*/
-      height: 150px;
-      text-align: center;
-      margin: 5px;
-      margin-bottom: 10px;
-      padding: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
-
-    .weather > div {
-      width: 100px;
-      height: 150px;
-      text-align: center;
-      margin: 5px;
-      display: flex;
-      
-    }
-
-    .timeweather {
-      /*시간별날씨*/
-      height: 350px;
-      text-align: center;
-      margin: 5px;
-      margin-bottom: 10px;
-    }
-
-    .week-forecast {
-      /*주간예보*/
-      height: 230px;
-      text-align: center;
-      margin: 5px;
-      margin-bottom: 10px;
-    }
-
-    .main-abvert {
-      /*메인 광고*/
-      height: 100px;
-      text-align: center;
-      margin: 5px;
-      margin-bottom: 10px;
-    }
-
-    .living-index {
-      /*생활지수*/
-      height: 200px;
-      text-align: center;
-      margin: 5px;
-      margin-bottom: 10px;
-    }
-
-    .neighborhood {
-      /*우리동네날씨*/
-      height: 500px;
-      text-align: center;
-      margin: 5px;
-      margin-bottom: 10px;
     }
 
     /* 서브 영역*/
@@ -186,7 +77,8 @@
     .fine-dust {
       /*대기정보*/
 
-      height: 300px;
+      height: 400px;
+      height: 400px;
       text-align: center;
       margin: 5px;
       padding: 15px;
@@ -198,6 +90,8 @@
       height: 50px;
       text-align: center;
       margin: 5px;
+      padding: 15px;
+      padding: 15px;
     }
 
     .sub-advert {
@@ -206,6 +100,7 @@
       height: 220px;
       text-align: center;
       margin: 5px;
+      padding: 15px;
     }
 
     .sunset {
@@ -213,12 +108,15 @@
       height: 300px;
       text-align: center;
       margin: 5px;
+      padding: 15px;
+      padding: 15px;
     }
     .moonset {
       /*월출월몰*/
       height: 300px;
       text-align: center;
       margin: 5px;
+      padding: 15px;
     }
   </style>
 
@@ -256,11 +154,18 @@
           <strong p>현재 지역에 발표된 특보가 없습니다.</strong>
         </article>
         <article class="weather1 roundCorner fontColor">
-          <div>강남구 역삼동</div>
-          <div>케이웨더</div>
+          <div id="location">
+            <div><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#e3e3e3"><path d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"/></svg> 강남구 역삼동</div>
+            <div>케이웨더</div>
+          </div>
           
         </article>
-        <article class="timeweather roundCorner fontColor">역삼동 시간별날씨</article>
+        <article class="timeweather roundCorner fontColor">역삼동 시간별날씨
+          <div><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3"><path d="M444-288h72v-240h-72v240Zm35.79-312q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm.49 504Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg></div>
+          <div id="timeweather_img">
+            <img src="../img/스크린샷 2025-05-10 172905.png" alt="">
+          </div>
+        </article>
         <article class="week-forecast roundCorner fontColor">역삼동 주간예보</article>
         <article class="main-abvert roundCorner ">광고</article>
         <article class="living-index roundCorner fontColor">생활지수</article>
