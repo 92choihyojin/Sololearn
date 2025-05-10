@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .wrap {
+      width: 1200px;
+      height: auto;
+      margin: 10px auto;
+      background-color: black;
+      border: 2px solid black;
+    }
+
+    .fontColor {
+      color: white;
+    }
+
+    .roundCorner {
+      border-radius: 16px ;
+      background-color: #1C1E21
+    }
+
+    header {
+      width: auto;
+      height: 50px;
+      margin: 10px;
+      
+      text-align: left;
+    }
+
+    header div {
+      display: inline-block;
+      color: rgb(96, 96, 96);
+      margin-left: 10px;
+    }
+    
+    .main-header {
+      /*동네날씨 전국 테마 기상특보 영상 MY*/
+      width: auto;
+      height: 50px;
+      margin: 15px;
+      text-align: left;
+      font-weight: 600;
+      font-size: large;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-items: start;
+    }
+
+    .weather {
+      width: 75%;
+      height: auto;
+      border: 2px dotted rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .news-main {
+      /*뉴스 메인*/
+      width: auto;
+      height: auto;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: start;
+    }
+
+    .newsbreak {
+      /*특보*/
+      height: 50px;
+      text-align: left;
+      margin: 5px;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .newsbreak div {
+      /*특보-2*/
+      width: 50px;
+      height: 30px;
+      font-size: medium;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      color: rgb(249, 129, 37);
+      background-color: rgb(90, 33, 33);
+      border-radius: 30px;
+      display: inline-block;
+      margin: 10px;
+      margin-left: 20px;
+    }
+    .newsbreak p {
+      display: inline-block;
+    }
+
+    .weather1 {
+      /*날씨*/
+      height: 150px;
+      text-align: center;
+      margin: 5px;
+      margin-bottom: 10px;
+      padding: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .weather > div {
+      width: 100px;
+      height: 150px;
+      text-align: center;
+      margin: 5px;
+      display: flex;
+      
+    }
+
+    .timeweather {
+      /*시간별날씨*/
+      height: 350px;
+      text-align: center;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .week-forecast {
+      /*주간예보*/
+      height: 230px;
+      text-align: center;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .main-abvert {
+      /*메인 광고*/
+      height: 100px;
+      text-align: center;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .living-index {
+      /*생활지수*/
+      height: 200px;
+      text-align: center;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .neighborhood {
+      /*우리동네날씨*/
+      height: 500px;
+      text-align: center;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    /* 서브 영역*/
+    .news-sub {
+      width: 25%;
+      height: auto;
+      border: 2px dotted rgba(0, 0, 0, 0.5);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cctv {
+      /*cctv*/
+      height: 300px;
+      text-align: center;
+      margin: 5px;
+      
+      padding: 15px;
+    }
+
+    .fine-dust {
+      /*대기정보*/
+
+      height: 300px;
+      text-align: center;
+      margin: 5px;
+      padding: 15px;
+    }
+
+    .key-word {
+      /*키워드*/
+
+      height: 50px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .sub-advert {
+      /*서브 광고*/
+
+      height: 220px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .sunset {
+      /*일출일몰*/
+      height: 300px;
+      text-align: center;
+      margin: 5px;
+    }
+    .moonset {
+      /*월출월몰*/
+      height: 300px;
+      text-align: center;
+      margin: 5px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="wrap">
+  
+    <header>
+      <div><svg width="24" height="24" style="fill: white">
+        <path
+          d="M12 6.36C15.1152 6.36 17.6352 9.072 17.5152 12.2136C17.4024 15.2016 14.8536 17.64 11.8632 17.64H7.91762C7.65362 17.64 7.43762 17.424 7.43762 17.16V6.84C7.43762 6.576 7.65362 6.36 7.91762 6.36H11.9976M12 0H2.40002C1.60562 0 0.960022 0.6456 0.960022 1.44V22.56C0.960022 23.3544 1.60562 24 2.40002 24H12C18.6264 24 24 18.6264 24 12C24 5.3736 18.6264 0 12 0Z">
+        </path>
+      </svg>
+      <strong class="fontColor" style="font-size: x-large">날씨</strong></div>
+      <div>뉴스</div>
+      <div>연예</div>
+      <div>스포츠</div>
+      
+    </header>
+    <article class="main-header roundCorner fontColor">
+      <ul>동네날씨</ul>
+      <ul>전국</ul>
+      <ul>테마</ul>
+      <ul>기상특보</ul>
+      <ul>영상</ul>
+      <ul>MY</ul>
+    </article>
+    <section class="news-main">
+      <section class="weather">
+        <article class="newsbreak roundCorner ">
+          <div>특보</div>
+          <strong p>현재 지역에 발표된 특보가 없습니다.</strong>
+        </article>
+        <article class="weather1 roundCorner fontColor">
+          <div>강남구 역삼동</div>
+          <div>케이웨더</div>
+          
+        </article>
+        <article class="timeweather roundCorner fontColor">역삼동 시간별날씨</article>
+        <article class="week-forecast roundCorner fontColor">역삼동 주간예보</article>
+        <article class="main-abvert roundCorner ">광고</article>
+        <article class="living-index roundCorner fontColor">생활지수</article>
+        <article class="neighborhood roundCorner fontColor">우리동네날씨</article>
+      </section>
+      <section class="news-sub">
+        <strong class="cctv roundCorner fontColor">강남역 CCTV
+
+        </strong>
+        <strong class="fine-dust roundCorner fontColor">역삼동 대기정보</strong>
+        <section class="key-word roundCorner">키워드</section>
+        <section class="sub-advert roundCorner">광고</section>
+        <section class="sunset roundCorner fontColor">일출일몰</section>
+        <section class="moonset roundCorner fontColor">월출월몰</section>
+      </section>
+    </section>
+
+
+  </div>
+
+
+</body>
+
+</html>
