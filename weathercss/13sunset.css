@@ -1,0 +1,22 @@
+.sunset {
+  /*일출일몰*/
+  height: 320px;
+  text-align: center;
+  margin: 5px;
+  padding: 15px;
+}
+.sunset > div:nth-child(1){
+  text-align: left;
+  margin-bottom: 15px;
+}
+.sunset > div:nth-child(2){
+  border: 1px dotted white;
+  border-radius: 5%;
+  height: 220px;
+  margin-bottom: 15px;
+}
+.sunset > div:nth-child(3){
+  /*border: 1px dotted white;*/
+  font-size: small;
+  text-align: left;
+}

@@ -1,0 +1,49 @@
+.moonset {
+  /*월출월몰*/
+  height: 320px;
+  margin: 5px;
+  padding: 15px;
+}
+.moonset > div:nth-child(1){
+  text-align: left;
+  margin-bottom: 15px;
+}
+.moonset > div:nth-child(2){
+  border: 1px dotted white;
+  border-radius: 5%;
+  height: 110px;
+  margin-bottom: 15px;
+}
+.moonset > div:nth-child(2) > div {
+
+}
+
+.moonset > div:nth-child(3){
+   /*border: 1px dotted white;*/
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.moonset > div:nth-child(4){
+  /*border: 1px dotted white;*/
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.moonset > div:nth-child(5){
+   /*border: 1px dotted white;*/
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.moonset > div:nth-child(6){
+  /*border: 1px dotted white;*/
+  font-size: small;
+  text-align: left;
+}

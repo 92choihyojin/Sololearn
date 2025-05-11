@@ -1,8 +1,26 @@
     .living-index {
       /*생활지수*/
       height: 200px;
-      text-align: center;
       margin: 5px;
       margin-bottom: 10px;
       padding: 15px;
     }
+    .living-index article {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    }
+    .living-index article div:nth-child(1){
+    text-align: left;
+    margin-bottom: 15px;
+    }
+    .living-index article nav {
+      border: 1px dotted white;
+      text-align: center;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    .living-index article div:nth-child(3){
+    text-align: left;
+    }
+  

@@ -1,16 +1,23 @@
 .timeweather {
   /*시간별날씨*/
-  height: 350px;
+  height: 420px;
   font-weight: 600;
   margin: 5px;
   margin-bottom: 10px;
   padding: 15px;
+  
+}
+
+.timeweather > div {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin: 15px;
+}
+.timeweather > div > div {
+  display: inline-block;
+  width: 20px;
 }
 .timeweather > #timeweather_img {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  height: 420px;
 }

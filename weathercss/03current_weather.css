@@ -1,24 +1,79 @@
 .weather1 {
   /*날씨*/
   height: 150px;
-  text-align: center;
   margin: 5px;
   margin-bottom: 10px;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  
 }
 .weather > div {
   width: 100px;
   height: 150px;
-  text-align: center;
   margin: 5px;
   display: flex;
-  
 }
-#location {
+.weather1> #weather1_cloud {
+  right: 60px;
+  width: auto;
+  height: auto;
+  top: 0;
+  display: inline-block;
+  position: relative;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  margin-left: 610px;
+}
+
+.weather1> #weather1_cloud svg {
+  width: auto;
+  position: relative;
+  height: 150px;
+  transform: translate3d(0px, 0px, 0px);
+  content-visibility: visible;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+#spacer {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+
+#location { 
+  top: -150px;
+  margin: 20px 0 0 30px;
+  position: relative;
+}
+
+#k-weatherback {
+  width: 120px;
+  height: 30px;
+  top: -150px;
+  right: 0px;
+  margin: 20px;
+  text-align: right;
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+#k-weatherback>img {
+  margin: 5px;
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+#k-weather {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+}
+#k-weatherback>svg {
+  position: relative;
+  left: -5px;
+  top: -5px;
+  display: inline-block;
+
 }

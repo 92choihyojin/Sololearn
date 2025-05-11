@@ -1,0 +1,75 @@
+.fine-dust {
+  /*대기정보*/
+  text-align: left;
+  height: 400px;
+  height: 400px;
+  margin: 5px;
+  padding: 15px;
+}
+
+.fine-dust > #wait_content {
+  height: 40px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#dust {
+  /*border: 1px solid white;*/
+  background-color: #2C2E33;;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+#super_dust {
+  /*border: 1px solid white;*/
+  background-color: #2C2E33;;
+  width: 110px;
+  height: 40px;
+  border-radius: 20px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+#yellow_dust {
+  /*border: 1px solid white;*/
+  background-color: #2C2E33;;
+  width: 60px;
+  height: 40px;;
+  border-radius: 20px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+#wait_sub {
+  /*border: 1px solid white;*/
+  background-color: #2C2E33;;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+#wait_content2  {
+  /*border: 1px dotted white;*/
+  background-color: #00A864;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#wait_content2 div {
+  font-size: 14px;
+}
+#wait_content2 div:nth-child(2){
+  font-size: 20px;
+  margin-top: -5px;
+}

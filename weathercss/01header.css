@@ -24,4 +24,5 @@ header div {
   display: flex;
   flex-direction: row;
   justify-items: start;
+  cursor: pointer;
 }

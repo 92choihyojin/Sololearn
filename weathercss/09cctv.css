@@ -1,0 +1,48 @@
+.cctv {
+  /*cctv*/
+  height: 300px;
+  text-align: center;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+}
+.cctv div {
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+#cctv_screen {
+  border: 1px dotted white;
+  border-radius: 5%;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 15px;
+}
+
+#cctv_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#cctv_left_button {
+  border: 1px dotted white;
+  border-radius: 30px;
+  width: 48%;
+  height: 40px;
+  
+}
+#cctv_right_button {
+  border: 1px dotted white;
+  border-radius: 30px;
+  width: 48%;
+  height: 40px;
+}
+#cctv_supply{
+  border: 1px dotted white;
+  width: 50%;
+}
