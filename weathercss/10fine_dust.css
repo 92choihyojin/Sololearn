@@ -65,6 +65,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 #wait_content2 div {
   font-size: 14px;
@@ -73,3 +74,10 @@
   font-size: 20px;
   margin-top: -5px;
 }
+#wait_content3 {
+  border: 1px dotted yellow;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+

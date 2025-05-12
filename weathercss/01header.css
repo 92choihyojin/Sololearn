@@ -26,3 +26,20 @@ header div {
   justify-items: start;
   cursor: pointer;
 }
+.main-header > div {
+  border: 1px dotted white;
+  text-align: center;
+  border-radius: 20px;
+  width: 250px;
+  height: 30px;
+  margin-left: 380px;
+}
+header > nav {
+  border: 1px dotted white;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-left: 900px;
+  color: white;
+  text-align: center;
+}
