@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .wrap {
+      overflow: hidden;
+    }
+
+    .roller {
+      display: flex;
+    }
+
+    .rolling_list {
+      display: flex;
+    }
+
+    .wrap .rolling_list .item {
+      width: 700px;
+      height: 200px;
+      /* border-radius: 20px; */
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      /* flex-shrink: 0; */
+      /* background: #0339fb; */
+      color: #fff;
+      /* margin-right: 30px; */
+    }
+
+    .roller .rolling_list.original {
+      animation: rollingTop1;
+      animation-delay: 3s;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    .roller .rolling_list.clone {
+      animation: rollingTop2;
+      animation-delay: 3s;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes rollingTop1 {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX(-100%);
+      }
+
+      50.01% {
+        transform: translateX(-20%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes rollingTop2 {
+      0% {
+        transition: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+
+    /* hover시 일시정지 */
+    .roller:hover .rolling_list {
+      animation-play-state: paused;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="roller">
+      <ul class="rolling_list">
+        <li class="item">
+          <img src="./img/slide-1.jpg" alt="우주">
+        </li>
+        <li class="item">
+          <img src="./img/slide-2.jpg" alt="큐리오시티">
+        </li>
+        <li class="item">
+          <img src="./img/slide-3.jpg" alt="우주왕복선">
+        </li>
+        <li class="item">
+          <img src="./img/slide-4.jpg" alt="노을">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    let roller = document.querySelector('.roller .rolling_list');
+    roller.id = 'roller1';
+    let clone = roller.cloneNode(true)
+    clone.id = 'roller2';
+    document.querySelector('.roller').appendChild(clone);
+    roller.classList.add('original');
+    clone.classList.add('clone');
+  </script>
+</body>
+
+</html>
