@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     * {
@@ -64,9 +65,22 @@
       flex-direction: row;
     }
 
-    #text {
+    #text,
+    .text {
       width: 200px;
       height: 35px;
+      margin-right: 0;
+      border-right: 0;
+    }
+
+    .inputClear {
+      background-color: #ccc;
+      margin-left: 0;
+      width: 35px;
+      height: 35px;
+      border:none;
+      border: 1px solid black;
+      border-left: 0;
     }
 
     input {
@@ -96,10 +110,12 @@
       height: 30px;
       width: 70px;
       margin: 5px;
+      cursor: pointer;
     }
     #cancel {
       height: 30px;
       width: 45px;
+      cursor: pointer;
     }
     #pattern{
       height: 60px;
@@ -120,21 +136,23 @@
       flex-direction: column;
     }
     #speaker {
-      background-color: rgb(185, 185, 185);
+      background-color: rgb(255, 255, 255);
       width: 30px;
       height: 30px;
+      cursor: pointer;
     }
     #reset {
-      background-color: rgb(136, 246, 220);
+      background-color: rgb(255, 255, 255);
       width: 30px;
       height: 30px;
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <p>2020.1.29</p><p id="userJoin">회원가입</p>
+    <p>2025.5.15</p>
     <br>
     <div>
       <h3>회&nbsp;&nbsp;원&nbsp;&nbsp;가&nbsp;&nbsp;입</h3>
@@ -147,16 +165,17 @@
             <label for="textId" id="textId">
               영문자, 숫자, _만 입력 가능. 최소 3자 이상 입력하세요.
             </label>
-            <input type="text" name="id" id="text">
+            <input type="text" name="id" class="text" id="inputId">
+            <button class="inputClear" id="btnInputId">X</button>
           </td>
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td><label for=""></label><input type="text" name="pwd" id="text"></td>
+          <td><label for=""></label><input type="password" name="pwd" id="text"></td>
         </tr>
         <tr>
           <td>비밀번호 확인</td>
-          <td><label for=""></label><input type="text" name="pwdok" id="text"></td>
+          <td><label for=""></label><input type="password" name="pwdok" id="text"></td>
         </tr>
       </table>
 
@@ -254,7 +273,7 @@
         <tr>
           <td>정보공개</td>
           <td>정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.<br>
-          <input type="checkbox" name="" id="" class="middle" checked />다른 분들이 나의 정보를 볼수 있도록 합니다.</td>
+          <input type="checkbox" name="" id="info" class="middle" checked /><label for="info">다른 분들이 나의 정보를 볼수 있도록 합니다.</label></td>
         </tr>
         <tr>
           <td>자동등록방지</td>
@@ -263,14 +282,12 @@
             <div id="patternBox">
             </div>
               <div id="img_2">
-                <button id="speaker">
-                </button>
-                <button id="reset">
+                <button id="speaker"><i class="fa-solid fa-volume-high"></i></button>
+                <button id="reset"><i class="fa-solid fa-repeat"></i>
                 </button>
               </div>
               <input type="text" name="pattern" id="pattern">
            </div>
-            <br>
             자동등록방지 숫자를 순서대로 입력하세요.</td>
         </tr>
       </table>
@@ -284,16 +301,29 @@
 
   <!-- 스크립트 -->
   <script>
-    let radio = document.querySelector("radio_etc");
-    let text = document.querySelector("text_etc");
+
+    let radio = document.querySelector("#radio_etc");
+    let text = document.querySelector("#text_etc");
     let flag = false;
-    radio.click = function () {
+    
+    console.log(text);
+    radio.onclick = function() {
       if(flag == false) {
+        flag = true
           text.style.display = "block";
       }else{ 
+          flag = false
         text.style.display = "none";
       }
     };
+
+    let btnInputId = document.querySelector('#btnInputId');
+    let inputId = document.querySelector('#inputId');
+
+    btnInputId.onclick = function() {
+      inputId.value = ""; 
+    }
+
   </script>
 </body>
 
